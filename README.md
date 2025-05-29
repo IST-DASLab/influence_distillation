@@ -77,7 +77,7 @@ selected_idx = infdist.pick_first_order(
     train_loader,
     target_loader,
     optimizer,                       # Could be None
-    embeddings=jvp_embeddings,   # From step 1
+    embeddings=jvp_embeddings,       # From step 1
     k=10000,                         # Number of samples to select
     proj_subset='down_proj',         # Subset of parameters to use for gradient
     param_mask_numel=1_000_000_000,  # Maximum element count to consider
